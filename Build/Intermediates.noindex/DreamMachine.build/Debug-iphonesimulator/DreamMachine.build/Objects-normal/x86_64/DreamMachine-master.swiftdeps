@@ -1,0 +1,17 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.54.11 clang-900.0.31)"
+options: "c69d615028920262b014f8d17911e2c2"
+build_time: [1501278740, 474034000]
+inputs:
+  "/Users/ales/Projects/DreamMachine/DreamMachine/View/ItemCell.swift": [1501116430, 0]
+  "/Users/ales/Projects/DreamMachine/DreamMachine/View/MaterialView.swift": [1501191559, 0]
+  "/Users/ales/Projects/DreamMachine/DreamMachine/MainVC.swift": [1501197136, 0]
+  "/Users/ales/Projects/DreamMachine/DreamMachine/AppDelegate.swift": [1501111143, 0]
+  "/Users/ales/Projects/DreamMachine/Build/Intermediates.noindex/DreamMachine.build/Debug-iphonesimulator/DreamMachine.build/DerivedSources/CoreDataGenerated/DreamMachine/Image+CoreDataClass.swift": [1501278740, 0]
+  "/Users/ales/Projects/DreamMachine/Build/Intermediates.noindex/DreamMachine.build/Debug-iphonesimulator/DreamMachine.build/DerivedSources/CoreDataGenerated/DreamMachine/Image+CoreDataProperties.swift": [1501278740, 0]
+  "/Users/ales/Projects/DreamMachine/Build/Intermediates.noindex/DreamMachine.build/Debug-iphonesimulator/DreamMachine.build/DerivedSources/CoreDataGenerated/DreamMachine/Item+CoreDataClass.swift": [1501278740, 0]
+  "/Users/ales/Projects/DreamMachine/Build/Intermediates.noindex/DreamMachine.build/Debug-iphonesimulator/DreamMachine.build/DerivedSources/CoreDataGenerated/DreamMachine/Item+CoreDataProperties.swift": [1501278740, 0]
+  "/Users/ales/Projects/DreamMachine/Build/Intermediates.noindex/DreamMachine.build/Debug-iphonesimulator/DreamMachine.build/DerivedSources/CoreDataGenerated/DreamMachine/ItemType+CoreDataClass.swift": [1501278740, 0]
+  "/Users/ales/Projects/DreamMachine/Build/Intermediates.noindex/DreamMachine.build/Debug-iphonesimulator/DreamMachine.build/DerivedSources/CoreDataGenerated/DreamMachine/ItemType+CoreDataProperties.swift": [1501278740, 0]
+  "/Users/ales/Projects/DreamMachine/Build/Intermediates.noindex/DreamMachine.build/Debug-iphonesimulator/DreamMachine.build/DerivedSources/CoreDataGenerated/DreamMachine/Store+CoreDataClass.swift": [1501278740, 0]
+  "/Users/ales/Projects/DreamMachine/Build/Intermediates.noindex/DreamMachine.build/Debug-iphonesimulator/DreamMachine.build/DerivedSources/CoreDataGenerated/DreamMachine/Store+CoreDataProperties.swift": [1501278740, 0]
+  "/Users/ales/Projects/DreamMachine/Build/Intermediates.noindex/DreamMachine.build/Debug-iphonesimulator/DreamMachine.build/DerivedSources/CoreDataGenerated/DreamMachine/DreamMachine+CoreDataModel.swift": [1501278740, 0]

@@ -23,6 +23,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         tableView.delegate = self
         tableView.dataSource = self
         
+        genetateTestData()
         attemptFetch()
     }
     
@@ -38,7 +39,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150.0
+        return 280.0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -106,6 +107,29 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         } //switch
         
     } //func controller
+    
+    func genetateTestData() {
+        let item1 = Item(context: context)
+        item1.title = "iMac 21.1 - 1"
+        item1.price = 79990.00
+        item1.details =  """
+        2-ядерный процессор Intel Core i5 с тактовой частотой 2,3 ГГц; 8 ГБ встроенной памяти DDR4 2133 МГц; Жёсткий диск 5400 об/﻿мин ёмкостью 1 ТБ; Графический адаптер: Intel Iris Plus Graphics 640...
+        """
+        
+        let item2 = Item(context: context)
+        item2.title = "iMac 21.1 - 2"
+        item2.price = 94990.00
+        item2.details = """
+        4-ядерный процессор Intel Core i5 с тактовой частотой 3,0 ГГц; 8 ГБ встроенной памяти DDR4 2400 МГц; Жёсткий диск 5400 об/﻿мин ёмкостью 1 ТБ; Видеокарта: Radeon Pro 555 с 2 ГБ памяти VRAM...
+        """
+        
+        let item3 = Item(context: context)
+        item3.title = "iMac 21.1 - 3"
+        item3.price = 109990.00
+        item3.details = """
+        4-ядерный процессор Intel Core i5 с тактовой частотой 3,4 ГГц; 8 ГБ встроенной памяти DDR4 2400 МГц; Накопитель Fusion Drive ёмкостью 1 ТБ; Видиокарта: Radeon Pro 560 с 4 ГБ памяти VRAM...
+        """
+    }
     
 } //class
 

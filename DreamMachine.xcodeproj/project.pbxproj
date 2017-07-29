@@ -15,6 +15,7 @@
 		787140BE1F294ED1009A3C2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 787140BC1F294ED1009A3C2F /* LaunchScreen.storyboard */; };
 		787140C81F2959E3009A3C2F /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787140C61F2959DC009A3C2F /* ItemCell.swift */; };
 		787140C91F2959E6009A3C2F /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787140C71F2959DC009A3C2F /* MaterialView.swift */; };
+		789F1C911F2A88FD00CB5E23 /* porsche.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 789F1C901F2A88F700CB5E23 /* porsche.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		787140BF1F294ED1009A3C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		787140C61F2959DC009A3C2F /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		787140C71F2959DC009A3C2F /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		789F1C901F2A88F700CB5E23 /* porsche.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = porsche.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		787140AF1F294ED0009A3C2F /* DreamMachine */ = {
 			isa = PBXGroup;
 			children = (
+				789F1C8F1F2A885700CB5E23 /* Files */,
 				787140C51F29591F009A3C2F /* View */,
 				787140B01F294ED1009A3C2F /* AppDelegate.swift */,
 				787140B21F294ED1009A3C2F /* MainVC.swift */,
@@ -79,6 +82,14 @@
 				787140C71F2959DC009A3C2F /* MaterialView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		789F1C8F1F2A885700CB5E23 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				789F1C901F2A88F700CB5E23 /* porsche.ttf */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +153,7 @@
 				787140BE1F294ED1009A3C2F /* LaunchScreen.storyboard in Resources */,
 				787140BB1F294ED1009A3C2F /* Assets.xcassets in Resources */,
 				787140B61F294ED1009A3C2F /* Main.storyboard in Resources */,
+				789F1C911F2A88FD00CB5E23 /* porsche.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +348,7 @@
 				787140C41F294ED1009A3C2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
