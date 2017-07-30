@@ -155,7 +155,7 @@
             </objects>
             <point key="canvasLocation" x="400.00000000000006" y="35.869565217391305"/>
         </scene>
-        <!--Item DetailVC-->
+        <!--Add / Edit-->
         <scene sceneID="RCb-kb-LtM">
             <objects>
                 <viewController id="Laq-85-Nyp" customClass="itemDetailVC" customModule="DreamMachine" customModuleProvider="target" sceneMemberID="viewController">
@@ -191,11 +191,13 @@
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8BW-PW-zY2" customClass="CustomTextField" customModule="DreamMachine" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8BW-PW-zY2">
                                 <rect key="frame" x="116" y="172" width="290" height="150"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="u5X-OV-aeS"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="u5X-OV-aeS">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                    </constraint>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
@@ -208,29 +210,76 @@
                                     <constraint firstAttribute="height" constant="100" id="lLl-Jb-k7U"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tly-SH-sez">
+                                <rect key="frame" x="138.66666666666669" y="427" width="137.00000000000006" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgh-Ux-71b">
+                                <rect key="frame" x="8" y="686" width="398" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FUm-gU-w5X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="tintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save Item">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <pickerView contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="D8Q-ku-435">
+                                <rect key="frame" x="132" y="460" width="150" height="216"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="L9F-M5-0Nl"/>
+                                </constraints>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="kRm-W9-8yp" firstAttribute="top" secondItem="IaY-Dd-95D" secondAttribute="top" id="41t-31-6JX"/>
+                            <constraint firstItem="kRm-W9-8yp" firstAttribute="top" secondItem="IaY-Dd-95D" secondAttribute="top" id="41t-31-6JX">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="IaY-Dd-95D" firstAttribute="trailing" secondItem="bgh-Ux-71b" secondAttribute="trailing" constant="8" id="JzS-Nu-aCC"/>
+                            <constraint firstItem="bgh-Ux-71b" firstAttribute="leading" secondItem="IaY-Dd-95D" secondAttribute="leading" constant="8" id="MWH-Fe-TWQ"/>
                             <constraint firstItem="IaY-Dd-95D" firstAttribute="trailing" secondItem="8BW-PW-zY2" secondAttribute="trailing" constant="8" id="Pwq-p8-3wc"/>
                             <constraint firstItem="8BW-PW-zY2" firstAttribute="leading" secondItem="N5P-nS-MPx" secondAttribute="trailing" constant="8" id="Wih-eo-X5T"/>
-                            <constraint firstItem="v34-aV-H0c" firstAttribute="top" secondItem="2OF-LS-Zna" secondAttribute="bottom" constant="10" id="YRV-G5-bgc"/>
+                            <constraint firstItem="v34-aV-H0c" firstAttribute="top" secondItem="2OF-LS-Zna" secondAttribute="bottom" constant="10" id="YRV-G5-bgc">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="kRm-W9-8yp" firstAttribute="leading" secondItem="IaY-Dd-95D" secondAttribute="leading" constant="8" id="Yq8-d0-K0b"/>
                             <constraint firstItem="N5P-nS-MPx" firstAttribute="leading" secondItem="IaY-Dd-95D" secondAttribute="leading" constant="8" id="ZJb-IH-Pms"/>
-                            <constraint firstItem="2OF-LS-Zna" firstAttribute="top" secondItem="IaY-Dd-95D" secondAttribute="top" constant="8" id="alm-Ht-ka3"/>
+                            <constraint firstItem="D8Q-ku-435" firstAttribute="centerX" secondItem="9uI-QG-rjX" secondAttribute="centerX" id="ZjM-0J-mK1"/>
+                            <constraint firstItem="2OF-LS-Zna" firstAttribute="top" secondItem="IaY-Dd-95D" secondAttribute="top" constant="8" id="alm-Ht-ka3">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="IaY-Dd-95D" firstAttribute="trailing" secondItem="v34-aV-H0c" secondAttribute="trailing" constant="8" id="fkc-9B-6ud"/>
                             <constraint firstItem="N5P-nS-MPx" firstAttribute="top" secondItem="kRm-W9-8yp" secondAttribute="bottom" constant="16" id="gF0-Ix-Rt7"/>
+                            <constraint firstItem="D8Q-ku-435" firstAttribute="top" secondItem="tly-SH-sez" secondAttribute="bottom" id="gR5-Tn-yca"/>
+                            <constraint firstItem="tly-SH-sez" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8BW-PW-zY2" secondAttribute="bottom" id="i59-R5-JCD"/>
                             <constraint firstItem="2OF-LS-Zna" firstAttribute="leading" secondItem="kRm-W9-8yp" secondAttribute="trailing" constant="8" id="lxC-Sm-JWx"/>
-                            <constraint firstItem="8BW-PW-zY2" firstAttribute="top" secondItem="v34-aV-H0c" secondAttribute="bottom" constant="10" id="nYL-Sz-Asy"/>
+                            <constraint firstItem="8BW-PW-zY2" firstAttribute="top" secondItem="v34-aV-H0c" secondAttribute="bottom" constant="10" id="nYL-Sz-Asy">
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="bgh-Ux-71b" firstAttribute="top" secondItem="D8Q-ku-435" secondAttribute="bottom" constant="10" id="pml-HO-TQc"/>
                             <constraint firstItem="IaY-Dd-95D" firstAttribute="trailing" secondItem="2OF-LS-Zna" secondAttribute="trailing" constant="8" id="rD4-Co-C8j"/>
+                            <constraint firstItem="IaY-Dd-95D" firstAttribute="bottom" secondItem="bgh-Ux-71b" secondAttribute="bottom" constant="20" id="uXg-pM-k2u"/>
                             <constraint firstItem="v34-aV-H0c" firstAttribute="leading" secondItem="kRm-W9-8yp" secondAttribute="trailing" constant="8" id="w35-eb-dgU"/>
+                            <constraint firstItem="tly-SH-sez" firstAttribute="centerX" secondItem="9uI-QG-rjX" secondAttribute="centerX" id="yqz-tu-o9b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IaY-Dd-95D"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Add / Edit" id="jNG-qE-grM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="Erf-WY-pIQ">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMH-m9-FHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1184.8" y="36.431784107946029"/>
+            <point key="canvasLocation" x="1182.608695652174" y="35.869565217391305"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2YX-y6-IoZ">
@@ -240,6 +289,14 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vt0-nZ-efl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
