@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		783CBF7A1F2D661D00B36015 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783CBF791F2D661D00B36015 /* CustomTextField.swift */; };
 		787140B11F294ED1009A3C2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787140B01F294ED1009A3C2F /* AppDelegate.swift */; };
 		787140B31F294ED1009A3C2F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787140B21F294ED1009A3C2F /* MainVC.swift */; };
 		787140B61F294ED1009A3C2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 787140B41F294ED1009A3C2F /* Main.storyboard */; };
@@ -16,9 +17,11 @@
 		787140C81F2959E3009A3C2F /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787140C61F2959DC009A3C2F /* ItemCell.swift */; };
 		787140C91F2959E6009A3C2F /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787140C71F2959DC009A3C2F /* MaterialView.swift */; };
 		789F1C911F2A88FD00CB5E23 /* porsche.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 789F1C901F2A88F700CB5E23 /* porsche.ttf */; };
+		78A337361F2CDB0800F41193 /* itemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A337351F2CDB0800F41193 /* itemDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		783CBF791F2D661D00B36015 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		787140AD1F294ED0009A3C2F /* DreamMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		787140B01F294ED1009A3C2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		787140B21F294ED1009A3C2F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		787140C61F2959DC009A3C2F /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		787140C71F2959DC009A3C2F /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		789F1C901F2A88F700CB5E23 /* porsche.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = porsche.ttf; sourceTree = "<group>"; };
+		78A337351F2CDB0800F41193 /* itemDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		782681EF1F2CD6CB00A27E1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				787140B21F294ED1009A3C2F /* MainVC.swift */,
+				783CBF791F2D661D00B36015 /* CustomTextField.swift */,
+				78A337351F2CDB0800F41193 /* itemDetailVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		787140A41F294ED0009A3C2F = {
 			isa = PBXGroup;
 			children = (
@@ -62,10 +76,10 @@
 		787140AF1F294ED0009A3C2F /* DreamMachine */ = {
 			isa = PBXGroup;
 			children = (
+				782681EF1F2CD6CB00A27E1D /* Controller */,
 				789F1C8F1F2A885700CB5E23 /* Files */,
 				787140C51F29591F009A3C2F /* View */,
 				787140B01F294ED1009A3C2F /* AppDelegate.swift */,
-				787140B21F294ED1009A3C2F /* MainVC.swift */,
 				787140B41F294ED1009A3C2F /* Main.storyboard */,
 				787140BA1F294ED1009A3C2F /* Assets.xcassets */,
 				787140BC1F294ED1009A3C2F /* LaunchScreen.storyboard */,
@@ -164,10 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				783CBF7A1F2D661D00B36015 /* CustomTextField.swift in Sources */,
 				787140C81F2959E3009A3C2F /* ItemCell.swift in Sources */,
 				787140B91F294ED1009A3C2F /* DreamMachine.xcdatamodeld in Sources */,
 				787140C91F2959E6009A3C2F /* MaterialView.swift in Sources */,
 				787140B31F294ED1009A3C2F /* MainVC.swift in Sources */,
+				78A337361F2CDB0800F41193 /* itemDetailVC.swift in Sources */,
 				787140B11F294ED1009A3C2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
