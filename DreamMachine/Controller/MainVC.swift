@@ -23,7 +23,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         tableView.delegate = self
         tableView.dataSource = self
         
-        genetateTestData()
+        //genetateTestData()
         attemptFetch()
     }
     
@@ -50,6 +50,23 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         return 0
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        if let objs = controller.fetchedObjects, objs.count > 0 {
+            let item = objs[indexPath.row]
+            performSegue(withIdentifier: "itemDetailVC", sender: item)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "itemDetailVC" {
+            if let destination = segue.destination as? itemDetailVC {
+                if let item = sender as? Item {
+                    destination.itemToEdit = item
+                }
+            }
+        }
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         if let sections = controller.sections {
             return sections.count
@@ -63,6 +80,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         fetchRequest.sortDescriptors = [dateSort]
         
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        controller.delegate = self
         self.controller = controller
         
         do {
