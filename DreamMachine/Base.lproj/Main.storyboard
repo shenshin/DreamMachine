@@ -38,6 +38,9 @@
                                     <segment title="Title"/>
                                 </segments>
                                 <color key="tintColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentChangeWith_sender:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ct4-1M-QSO"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Ls-uv-hMV">
                                 <rect key="frame" x="8" y="115" width="398" height="613"/>
